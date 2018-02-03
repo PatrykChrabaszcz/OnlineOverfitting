@@ -7,7 +7,7 @@ class Dataset:
     ModeSameDistRandom = 'SameDistRandom'
     ModeDiffRandom = 'DiffDistRandom'
 
-    def __init__(self, input_size=1, examples_per_class=32, seq_size=10000, mode=1):
+    def __init__(self, input_size=1, examples_per_class=32, seq_size=10000, mode='Zeros'):
         data = []
         labels = []
         self.seq_size = seq_size

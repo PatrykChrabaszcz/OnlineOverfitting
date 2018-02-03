@@ -30,6 +30,7 @@ def repackage_hidden(h):
                                                                  'SameDistRandom', 'DiffDistRandom']))
 def main(cuda, learning_rate, weight_decay, input_size, examples_per_class, epochs, bptt_size,
          hidden_size, num_layers, initial_state_type, data_type):
+
     data = Dataset(input_size=input_size, examples_per_class=examples_per_class, seq_size=10000,
                    mode=data_type)
     model = SimpleRNN(input_size=input_size, hidden_size=hidden_size, num_layers=num_layers,
